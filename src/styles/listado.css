@@ -1,0 +1,50 @@
+.listado {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+}
+
+.target-container {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+}
+
+.target {
+    background-color: rgba(61, 146, 146, 0.63);
+    display: inline-flex;
+    border-radius: 10px;
+    padding: 15px;
+    width: 20vw;
+}
+
+.target button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+}
+
+.target button:hover {
+    background-color: rgb(187, 32, 32);
+    color: white;
+}
+
+.icon {
+    width: 100px;
+}
+
+@media (max-width: 750px) {
+
+    .target {
+        width: auto;
+        max-width: 185px;
+    }
+}
+
+@media (max-width: 500px) {
+    .listado {
+        /* padding-left: auto; */
+        justify-content: center;
+    }
+}

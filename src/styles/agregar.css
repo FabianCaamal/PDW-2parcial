@@ -1,0 +1,10 @@
+.agregar {
+    margin: 20px;
+    text-align: center;
+}
+
+.agregar-form input {
+    /* margin-left: 20px; */
+    padding: 3px;
+    margin: 10px;
+}
