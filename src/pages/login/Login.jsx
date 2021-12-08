@@ -15,7 +15,7 @@ export const Login = ({ history }) => {
                     <input type="email" placeholder="Email"/>
                     <input type="password" placeholder="Password"/>
                     <br />
-                    <button className="bg-blue-500" onClick={() => navigate('dashboard') } >Iniciar sesion</button>
+                    <button className="bg-blue-500" onClick={ () => navigate('dashboard') } >Iniciar sesion</button>
                 </form>
             </div>
         </div>
