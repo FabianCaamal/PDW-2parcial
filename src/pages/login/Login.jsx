@@ -9,13 +9,13 @@ export const Login = ({ history }) => {
     return (
         <div className="card-login">
             <div className="card">
-                <h1>Login</h1>
+                <h1 className="font-bold text-2xl" >Login</h1>
 
                 <form className="form">
                     <input type="email" placeholder="Email"/>
                     <input type="password" placeholder="Password"/>
                     <br />
-                    <button onClick={() => navigate('lista') } >Iniciar sesion</button>
+                    <button className="bg-blue-500" onClick={() => navigate('dashboard') } >Iniciar sesion</button>
                 </form>
             </div>
         </div>
