@@ -9,7 +9,6 @@ export const Dashboard = () => {
             <div className="flex flex-wrap justify-center md:p-14 " >
                 <Category name="Mensajes" />
                 <Category name="Consumo" />
-                {/* <Category /> */}
             </div>
 
         </div>
