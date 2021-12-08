@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Splash } from './pages/Splash';
 import { Routes } from './routes/Routes';
 import './styles/App.css';
+import './index.css'
 
 const App = () => {
 

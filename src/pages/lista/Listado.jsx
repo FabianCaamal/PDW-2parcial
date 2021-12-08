@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router';
 import '../../styles/listado.css'
 import { Agregar } from './Agregar';
 import { Card } from './Card'
@@ -6,6 +7,7 @@ import { Card } from './Card'
 export const Listado = () => {
 
     const itemLocal = localStorage.getItem('listado');
+    const navigate = useNavigate()
 
     let initalState = [
         {
@@ -40,12 +42,12 @@ export const Listado = () => {
         }
     });
 
-    useEffect(() => {
-        localStorage.setItem('listado', JSON.stringify(initial))
-    }, [ initial ])
-
     return (
-        <div>
+        <div className="p-9" >
+            <span onClick={() => navigate('/dashboard') } className="border p-1 rounded hover:bg-red-700 hover:border-transparent cursor-pointer" >
+                Atras
+            </span>
+
             <h1 style={{ textAlign: 'center', fontSize: 45 }} >Contactos</h1> 
 
             <Agregar newState={setInitial} />
@@ -53,7 +55,7 @@ export const Listado = () => {
             <div className="listado">
                 {
                     initial.map( (item) => (
-                        <Card 
+                        <Card
                             key={item.id} 
                             id={item.id}
                             name={item.nombre} 

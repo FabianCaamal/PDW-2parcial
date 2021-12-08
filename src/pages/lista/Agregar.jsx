@@ -29,10 +29,10 @@ export const Agregar = ({ newState }) => {
         <div className="agregar">
             <form onSubmit={ handleForm } className="agregar-form" >
 
-                <input onChange={handleInput} value={nombre} type="text" placeholder="Para..." name="nombre" />
-                <input onChange={handleInput} value={desc} type="text" name="desc" placeholder="Asunto"  />
+                <input onChange={handleInput} value={nombre} type="text" required placeholder="Para..." name="nombre" />
+                <input onChange={handleInput} value={desc} type="text" required name="desc" placeholder="Asunto"  />
 
-                <button>agregar</button>
+                <button className="bg-green-500 p-1 rounded" >agregar</button>
             </form>
         </div>
     )
